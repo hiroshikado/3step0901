@@ -19,9 +19,9 @@ require_once ("pencil.php");
 		<h2>商品１</h2>
 		<?php
 		// オブジェクトを作る
-		// ここに追加
+		$item = new Pencil ( "バッタ", "H", 100 );
 		// プロパティのデータを表示
-		// ここに追加
+		$item->printData ();
 		?>
 		<hr>
 		<h2>商品２</h2>

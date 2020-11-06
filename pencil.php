@@ -1,6 +1,9 @@
 <?php
 class Pencil {
 	// ここに追加
+	private $maker; // メーカー
+	private $hardness; // 硬度
+	private $price; // 価格
 
 	// コンストラクタ
 	public function __construct($maker, $hardness, $price) {
@@ -16,7 +19,10 @@ class Pencil {
 		$this->price = $price;
 	}
 
-	// プロパティのデータを表示するメソッド
-	// ここに追加
+	public function printData() {
+		echo "メーカー：{$this->maker}<br>";
+		echo "硬　度　：{$this->hardness}<br>";
+		echo "価　格　：{$this->price}<br>";
+	}
 }
 ?>
